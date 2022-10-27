@@ -5,7 +5,7 @@ pipeline {
         stage('Clone') {
             steps {
                 git 'https://github.com/Sappireddyraviteja/JobRepo'
-            }
+                }
             }
             
         stage('Build') {
@@ -13,7 +13,7 @@ pipeline {
                 sh 'cd /home/administrator/Aswathy'
                 sh 'g++ SampleProgram.cpp'
                 sh './a.out'
-            }
+                }
             }
           
 
@@ -22,6 +22,6 @@ pipeline {
                     echo 'Code cloned successfully'
                 }
             }
-        
+        }
     }
 }
