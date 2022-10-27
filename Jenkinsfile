@@ -2,10 +2,16 @@ pipeline {
     agent any
 
     stages {
+        stage('Clone') {
+            steps {
+                git 'https://github.com/Sappireddyraviteja/JobRepo'
+            }
+            
         stage('Build') {
             steps {
-                // Get some code from a GitHub repository
-                git 'https://github.com/Sappireddyraviteja/JobRepo'
+                sh 'cd /home/administrator/Aswathy'
+                sh 'g++ SampleProgram.cpp'
+                sh './a.out'
             }
 
             post {
