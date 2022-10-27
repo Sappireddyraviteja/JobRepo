@@ -13,6 +13,8 @@ pipeline {
                 sh 'g++ SampleProgram.cpp'
                 sh './a.out'
             }
+            }
+          
 
             post {
                 success {
