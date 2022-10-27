@@ -17,11 +17,11 @@ pipeline {
             }
           
 
-            post {
-                success {
-                    echo 'Code cloned successfully'
-                }
-            }
+        post {
+             success {
+                 echo 'Code cloned successfully'
+             }
         }
     }
+}
 
