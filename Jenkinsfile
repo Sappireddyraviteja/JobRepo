@@ -22,6 +22,6 @@ pipeline {
                     echo 'Code cloned successfully'
                 }
             }
-        }
+        
     }
 }
